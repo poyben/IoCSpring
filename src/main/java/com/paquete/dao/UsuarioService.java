@@ -2,6 +2,6 @@ package com.paquete.dao;
 
 public interface UsuarioService {
 
-	public String inserta();
+	public void inserta();
 	
 }

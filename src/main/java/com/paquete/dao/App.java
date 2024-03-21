@@ -9,8 +9,6 @@ public class App {
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("bean.xml");
 		UsuarioService usrAtos = context.getBean("atos", UsuarioService.class);
 		UsuarioService usrEviden = context.getBean("eviden", UsuarioService.class);
-		System.out.println(usrAtos.inserta());
-		System.out.println(usrEviden.inserta());
 		usrAtos.inserta();
 		usrEviden.inserta();
 		context.close();
