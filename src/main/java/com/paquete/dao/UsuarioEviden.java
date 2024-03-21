@@ -6,8 +6,8 @@ import org.springframework.stereotype.Service;
 public class UsuarioEviden implements UsuarioService{
 
 	@Override
-	public void inserta() {
-		System.out.println("Insertando usuario Eviden");
+	public String inserta() {
+		return "Insertando usuario Eviden";
 		
 	}
 

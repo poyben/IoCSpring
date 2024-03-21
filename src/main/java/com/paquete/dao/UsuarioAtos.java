@@ -6,8 +6,8 @@ import org.springframework.stereotype.Service;
 public class UsuarioAtos implements UsuarioService{
 
 	@Override
-	public void inserta() {
-		System.out.println("Insertando usuario Atos");
+	public String inserta() {
+		return "Insertando usuario Atos";
 		
 	}
 
