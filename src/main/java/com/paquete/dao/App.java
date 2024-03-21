@@ -6,9 +6,11 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class App {
 
 	public static void main(String[] args) {
-		ApplicationContext context = new ClassPathXmlApplicationContext("bean.xml");
-		UsuarioFactory obj = (UsuarioFactory) context.getBean("fabrica");
-		obj.getInserta();
+		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("bean.xml");
+		UsuarioService usrAtos = context.getBean("atos", UsuarioService.class);
+		UsuarioService usrEviden = context.getBean("eviden", UsuarioService.class);
+		usrAtos.inserta();
+		usrEviden.inserta();
+		context.close();
 	}
-
 }

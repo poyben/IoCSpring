@@ -6,9 +6,14 @@ import org.springframework.stereotype.Service;
 @Service("fabrica")
 public class UsuarioFactory {
 	
-	@Autowired
-	UsuarioEviden usr;
+	private final UsuarioEviden usr;
 	
+	
+	@Autowired
+	public UsuarioFactory(UsuarioEviden usr) {
+		this.usr = usr;
+	}
+
 	public void getInserta() {
 		usr.inserta();
 	}

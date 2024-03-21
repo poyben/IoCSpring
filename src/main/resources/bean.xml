@@ -9,6 +9,6 @@
     http://www.springframework.org/schema/context/spring-context-3.1.xsd
 ">
  
-<context:annotation-config/>
-<context:component-scan base-package="com.paquete"/>
+<bean id="atos" class="com.paquete.dao.UsuarioAtos"/>
+<bean id="eviden" class="com.paquete.dao.UsuarioEviden"/>
 </beans>
