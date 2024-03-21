@@ -11,7 +11,8 @@ public class App {
 		UsuarioService usrEviden = context.getBean("eviden", UsuarioService.class);
 		System.out.println(usrAtos.inserta());
 		System.out.println(usrEviden.inserta());
+		usrAtos.inserta();
+		usrEviden.inserta();
 		context.close();
 	}
-
 }
